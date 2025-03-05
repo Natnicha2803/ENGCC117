@@ -26,15 +26,15 @@
 #include <stdio.h>
 
 int main() {
-    int num ;
+    int num;
     
     // รับค่าตัวเลขจากผู้ใช้
     printf( "Enter number: " ) ;
     scanf( "%d", &num ) ;
 
     // ค่าตัวเลขโรมันและสัญลักษณ์ที่ตรงกัน
-    int values[13] = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 } ;
-    char symbols[13][5] = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" } ;
+    int values[13] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 } ;
+    char symbols[13][5] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"} ;
 
     // แสดงผลลัพธ์เริ่มต้น
     printf( "%d = ", num ) ;
@@ -44,8 +44,8 @@ int main() {
         for ( ; num >= values[i] ; num -= values[i] ) { // ลดค่าทีละส่วน
             printf( "%s", symbols[i] ) ; // แสดงสัญลักษณ์โรมัน
         }//end for
-    }}//end for
+    }//end for
 
     printf( "\n" ) ;
     return 0 ;
-}
+}//end main
